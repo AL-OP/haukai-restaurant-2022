@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book a Table</title>
+   </head> 
+   <body>
+        <nav id="navbar">
+            <ul>
+                <li><img id="logo" src="images/logo.png" alt="Haukai Restaurant logo"></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li><a href="">Staff</a></li>-->
+            </ul>
+        </nav>
+        <nav id="mobile-navbar">
+            <img id="logo" src="images/logo.png" alt="Haukai Restaurant logo">
+            <ul id="mobile-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="active"><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!--<li><a href="">Staff</a></li>-->
+            </ul>
+            <a href="javascript:void(0);" class="mobile-menu" onclick="showLinks()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </nav>
+            <script>
+                function showLinks() {
+                    var x = document.getElementById("mobile-links");
+                    if (x.style.display == "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        <div id="reservations">
+            <h1>Book a Table</h1>
+            <div class="responsive-iframe-container" id="large-container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23faebd7&ctz=Pacific%2FAuckland&showPrint=0&showCalendars=0&hl=en_GB&src=YWRyaWFubG9uQG15b3AuYWMubno&src=ZW4tZ2IubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" 
+            style="border:solid 1px #777" width="80%" height="600" frameborder="0" scrolling="no"></iframe></div>
+            <div class="responsive-iframe-container" id="small-container">
+            <iframe src="https://calendar.google.com/calendar/embed?height=550&wkst=1&bgcolor=%23faebd7&ctz=Pacific%2FAuckland&showPrint=0&showCalendars=0&hl=en_GB&mode=AGENDA&src=YWRyaWFubG9uQG15b3AuYWMubno&src=ZW4tZ2IubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043" 
+            style="border:solid 1px #777" width="80%" height="550" frameborder="0" scrolling="yes"></iframe></div>
+            <div id="google-form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLZuZUuPKcAVaSDzpunv-yvwDGBjj4vdY3hHYdsRaoKdLZQ/viewform?embedded=true" width="100%" height="1505" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>       
+        </div>
+        
+        <footer>
+            <ul>
+                <li>ALL RIGHTS RESERVED. ©COPYRIGHT 2022 THE HAUKAI RESTAURANT.</li>
+                <li><a href="privacy.html">PRIVACY POLICY</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

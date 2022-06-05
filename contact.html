@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+   </head> 
+   <body>
+        <nav id="navbar">
+            <ul>
+                <li><img id="logo" src="images/logo.png" alt="Haukai Restaurant logo"></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <!--<li><a href="">Staff</a></li>-->
+            </ul>
+        </nav>
+        <nav id="mobile-navbar">
+            <img id="logo" src="images/logo.png" alt="Haukai Restaurant logo">
+            <ul id="mobile-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <!--<li><a href="">Staff</a></li>-->
+            </ul>
+            <a href="javascript:void(0);" class="mobile-menu" onclick="showLinks()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </nav>
+            <script>
+                function showLinks() {
+                    var x = document.getElementById("mobile-links");
+                    if (x.style.display == "block") {
+                        x.style.display = "none";
+                    } else {
+                        x.style.display = "block";
+                    }
+                }
+            </script>
+        <div id="contact-us">
+            <h1>Contact Us</h1>
+            <p>1 Island Street</p>
+            <p>Kerikeri, Bay of Islands</p>
+            <p>09 401 4019</p>
+            <p><a href="mailto:contact@haukairestaurant.co.nz">contact@haukairestaurant.co.nz</a></p>
+        </div>
+        <div id="location">
+            <h1>Our Location</h1>
+            <div id="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1629.548124073136!2d173.94998142956428!3d-35.228974014338036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1653194589281!5m2!1sen!2snz" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>   
+        </div>
+        
+        <footer>
+            <ul>
+                <li>ALL RIGHTS RESERVED. ©COPYRIGHT 2022 THE HAUKAI RESTAURANT.</li>
+                <li><a href="privacy.html">PRIVACY POLICY</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

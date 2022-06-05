@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Haukai Restaurant</title>
+   </head> 
+
+   <body>
+       <nav id="navbar">
+           <ul>
+               <li><img id="logo" src="images/logo.png" alt="Haukai Restaurant logo"></li>
+               <li class="active"><a href="home.html">Home</a></li>
+               <li><a href="menu.html">Menu</a></li>
+               <li><a href="reservations.html">Reservations</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <!--<li><a href="">Staff</a></li>-->
+           </ul>
+       </nav>
+       <nav id="mobile-navbar">
+        <img id="logo" src="images/logo.png" alt="Haukai Restaurant logo">
+        <ul id="mobile-links">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--<li><a href="">Staff</a></li>-->
+        </ul>
+        <a href="javascript:void(0);" class="mobile-menu" onclick="showLinks()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+        <script>
+            function showLinks() {
+                var x = document.getElementById("mobile-links");
+                if (x.style.display == "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+       <div id="slideshow">
+            <div class="restaurant-slides fade"><img src="images/motuarohia island.jpg" alt="Motuarohia Island"></div>
+           <div class="restaurant-slides fade"><img src="images/restaurant exterior 3.jpg" alt="Haukai Restaurant exterior"></div>
+            <div class="restaurant-slides fade"><img src="images/restaurant sunset.jpg" alt="Sunset outside the restaurant"></div>               
+            <div class="restaurant-slides fade"><img src="images/restaurant interior 3.jpg" alt="Busy day in the restaurant"></div>    
+            <div id="homepage-overlay-text">
+                <h2>The Haukai Restaurant</h2>
+                <h2>Māori and Pākeha kai</h2>
+            </div>  
+        </div>      
+       <script>
+           let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("restaurant-slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 5000); 
+            }
+       </script>
+       <div id="about-us">
+           <h3>About Us</h3>
+           <p>The Haukai Restaurant has created a menu with the fusion of Māori and Pākeha kai, in the hopes of letting guests experience Te Ao Māori through our delicious meals.</p>
+           <p>Come visit us in the beautiful Bay of Islands and leave with a full stomach and a new appreciation for the world around us.</p>
+       </div>
+    
+       <footer>
+        <ul>
+            <li>ALL RIGHTS RESERVED. ©COPYRIGHT 2022 THE HAUKAI RESTAURANT.</li>
+            <li><a href="privacy.html">PRIVACY POLICY</a></li>
+        </ul>
+        </footer>
+    </body>
+   
+</html>

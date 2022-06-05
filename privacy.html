@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Privacy Policy</title>
+   </head> 
+
+   <body>
+    <nav id="navbar">
+        <ul>
+            <li><img id="logo" src="images/logo.png" alt="Haukai Restaurant logo"></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--<li><a href="">Staff</a></li>-->
+        </ul>
+    </nav>
+    <nav id="mobile-navbar">
+        <img id="logo" src="images/logo.png" alt="Haukai Restaurant logo">
+        <ul id="mobile-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--<li><a href="">Staff</a></li>-->
+        </ul>
+        <a href="javascript:void(0);" class="mobile-menu" onclick="showLinks()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </nav>
+        <script>
+            function showLinks() {
+                var x = document.getElementById("mobile-links");
+                if (x.style.display == "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    <div id="privacy">
+        <h1>Privacy Policy</h1>
+        <p>We collect personal information from you, including information about your:</p>
+        <ul>
+            <li>name</li>
+            <li>contact information</li>
+        </ul>
+        <p>We collect your personal information in order to:</p>   
+        <ul>
+            <li>create bookings at our restaurant</li>
+            <li>inform you of upcoming promotions and events at our restaurant</li>
+        </ul>       
+        <p>Providing some information is optional. If you choose not to enter your contact information, we'll be unable to provide bookings.</p>
+        <p>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. </p>    
+        <p>If you’d like to ask for a copy of your information, or to have it corrected, please contact us at <a href="mailto:contact@haukairestaurant.co.nz">contact@haukairestaurant.co.nz</a> or call us on 09 401 4019.</p>
+    </div>
+   </body>
+</html>
